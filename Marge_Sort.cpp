@@ -5,3 +5,25 @@ using namespace std;
 int arr[20], B[20];
 // n adalah input ukuran array
 int n;
+
+// Membuat input panjang array dengan batasan maksimal 20
+void input()
+{
+    while (true)
+    {
+        cout << "Masukan Panjang elemnt array : ";
+        cin >> n;
+
+        if (n <= 20)
+        {
+            break;
+        }
+        else
+        {
+            cout << "\nMaksimalkan panjang array adalah 20";
+        }
+    }
+    cout << "\n-------------------------" << endl;
+    cout << "\nInputkan Isi elemnt array" << endl;
+    cout << "\n-------------------------" << endl;    
+}
