@@ -33,3 +33,6 @@ void input()
         cin >> arr[i];
     }
 }
+
+// Membuat fungsi margeSort
+void margeSort(int low, int high)
