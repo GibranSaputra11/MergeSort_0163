@@ -14,7 +14,7 @@ void input()
         cout << "Masukan Panjang elemnt array : ";
         cin >> n;
 
-        if (n <= 20)
+        if (n <= 20) // Mengecek agar panjang array tidak lebih dari 20
         {
             break;
         }
@@ -41,7 +41,7 @@ void mergeSort(int low, int high)
     {
         return; // step 1.a
     }
-    int mid = (low + high) / 2; // step 2
+    int mid = (low + high) / 2; // step 2, mencari tengah tengah array
 
     // Langkah 3
     // Fungsi rekursi - memanggil diri sendiri
@@ -102,7 +102,7 @@ void output()
 // Memanggil fungsi yang dibuat
 int main()
 {
-    input();
-    mergeSort(0, n - 1);
-    output();
+    input();                // input panjang dan isi array
+    mergeSort(0, n - 1);    // proses sorting dimulai dari indeks 0 ke n-1
+    output();               // tampilkan hasil
 }
