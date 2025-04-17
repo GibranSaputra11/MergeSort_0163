@@ -98,3 +98,11 @@ void output()
     }
     cout << endl;
 }
+
+// Memanggil fungsi yang dibuat
+int main()
+{
+    input();
+    mergeSort(0, n - 1);
+    output();
+}
