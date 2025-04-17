@@ -34,5 +34,17 @@ void input()
     }
 }
 
-// Membuat fungsi margeSort
-void margeSort(int low, int high)
+// Membuat fungsi mergeSort
+void mergeSort(int low, int high)
+{
+    if (low >= high) // step 1
+    {
+        return; // step 1.a
+    }
+    int mid = (low + high) / 2; // step 2
+
+    // Langkah 3
+    // Fungsi rekursi - memanggil diri sendiri
+    mergeSort(low, mid);        // Langkah 3.a
+    mergeSort(mid + 1, high);   // Langkah 3.b
+}
